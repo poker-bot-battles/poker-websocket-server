@@ -1,13 +1,14 @@
-# ASR-Api
+# Poker socket server
 
-Transcibtion inference api container image. For running serverless on gcp cloud run
-
-A demo can be found on [hetling.me/transskrib](hetling.me/transskrib) (only implemented in danish)
+Websocket sever for poker bot battles. For running gcp cloud run
 
 #### Run locally  
 
-To test the api or run locally do: 
+To test the server or run locally do: 
 
+first fork repository.
+
+then:
 ```shell
 docker build -t <image name> .
 ```
@@ -15,15 +16,10 @@ docker build -t <image name> .
 then: 
 
 ```shell
-docker run -p 8000:8000 <image name>
+docker run -p 4200:4200 <image name>
 ```
 
-## Built With
-
-* OpenAi Whisper v1.0.0
-* Uvicorn v0.15.0
-* FastApi 0.85.1
 
 #### Links
-* [GitHub](https://github.com/Hetling)
-* [Dockerhub](https://hub.docker.com/repository/docker/hetling/asr-v2)
+* [live here](https://frontend-p45vitbqra-ew.a.run.app)
+* [Dockerhub](https://hub.docker.com/repository/docker/hetling/poker-socket)
