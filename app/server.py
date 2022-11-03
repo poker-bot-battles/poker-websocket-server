@@ -22,6 +22,9 @@ async def connect(websocket, path):
         if msg["cmd"] == "connect":
             await handle_connect(websocket, msg)
 
+        if msg["cmd"] == "get clients":
+            await websocket.send(get_active_clients_ids())
+
         if msg["cmd"] == "start":
             await handle_start()
         
